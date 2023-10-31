@@ -1,9 +1,9 @@
 select
 date_date
-, sum(nb_orders) as nb_orders
+, count(orders_id) as nb_orders
 , sum(revenue) as revenue
-, sum(avg_basket) as avg_basket
-, sum(margin) as margin
+, avg(avg_basket) as avg_basket
+, sum(margin_per_order) as margin
 , sum(operational_margin) as operational_margin
 from {{ref("int_orders_operational")}}
 group by date_date

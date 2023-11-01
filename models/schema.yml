@@ -37,4 +37,15 @@ sources:
             tests:
               - unique
               - not_null
-              
+      - name: facebook
+        identifier: raw_gz_facebook
+        description : greenweez facebook campaign data
+      - name: adwords
+        identifier: raw_gz_adwords
+        description : greenweez adwords campaign data
+      - name: bing
+        identifier: raw_gz_bing
+        description : greenweez bing campaign data
+      - name: criteo
+        identifier: raw_gz_criteo
+        description : greenweez criteo campaign data
